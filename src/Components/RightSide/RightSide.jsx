@@ -1,10 +1,12 @@
 import React from 'react'
-import Nav from '../NavBar/Nav'
+
+import Dashboard from './Dashboard/Dashboard'
+import RightSideContent from './RightSideContent'
 
 const RightSide = () => {
   return (
-    <div>
-      {/* <Nav/> */}
+    <div className='w-3/4 '>
+      <RightSideContent/>
     </div>
   )
 }

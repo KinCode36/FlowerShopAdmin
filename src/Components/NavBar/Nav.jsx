@@ -4,11 +4,11 @@ import RightNav from './RightNav'
 
 const Nav = () => {
   return (
-    <div className='bg-white fixed top-0 z-50 flex justify-between items-center px-2 py-1 '>
-      <LeftNav/>
-      <RightNav/>
-    </div>
-  )
-}
+    <nav className="fixed top-0 left-60 right-0 z-50 h-15 bg-white border-b border-[#E0DDD6] px-7 flex items-center">
+      <LeftNav />
+      <RightNav />
+    </nav>
+  );
+};
 
-export default Nav
+export default Nav;

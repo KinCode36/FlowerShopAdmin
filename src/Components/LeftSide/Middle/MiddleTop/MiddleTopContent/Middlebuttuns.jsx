@@ -1,20 +1,26 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Middlebuttuns = ({ sidebarButtons }) => {
-  
-
   return (
     <div>
       {sidebarButtons?.map((button) => (
-        <button
+        <NavLink
           key={button.id}
-          className="flex items-center gap-2.5 py-2.5 px-5 text-sm text-white/55 cursor-pointer border-l-2 border-transparent transition-all duration-150 text-left font-dm font-normal hover:text-white hover:bg-white/[0.04] w-full"
+          to={button.path}
+          className={({ isActive }) =>
+            `flex items-center gap-2.5 py-2.5 px-5 text-sm cursor-pointer border-l-2 transition-all duration-150 text-left font-dm font-normal w-full ${
+              isActive
+                ? "text-white bg-white/10 border-pink-500"
+                : "text-white/55 border-transparent hover:text-white hover:bg-white/[0.04]"
+            }`
+          }
         >
           <span className="text-sm w-4 text-center">
             {button.icon}
           </span>
           {button.title}
-        </button>
+        </NavLink>
       ))}
     </div>
   );

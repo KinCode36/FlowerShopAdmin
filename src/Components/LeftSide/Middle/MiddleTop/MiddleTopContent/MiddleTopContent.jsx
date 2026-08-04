@@ -4,32 +4,37 @@ import Middlebuttuns from './Middlebuttuns'
 
 const MiddleTopContent = () => {
 const sidebarButtons = [
-    {
-      id: 1,
-      title: "Dashboard",
-      icon: "📊",
-    },
-    {
-      id: 2,
-      title: "Orders",
-      icon: "🛍️",
-    },
-    {
-      id: 3,
-      title: "Products",
-      icon: "🌸",
-    },
-    {
-      id: 4,
-      title: "Bookings",
-      icon: "📅",
-    },
-    {
-      id: 5,
-      title: "Analytics",
-      icon: "📈",
-    },
-  ];
+  {
+    id: 1,
+    title: "Dashboard",
+    icon: "📊",
+    path: "/",
+  },
+  {
+    id: 2,
+    title: "Orders",
+    icon: "🛍️",
+    path: "/orders",
+  },
+  {
+    id: 3,
+    title: "Products",
+    icon: "🌸",
+    path: "/products",
+  },
+  {
+    id: 4,
+    title: "Bookings",
+    icon: "📅",
+    path: "/bookings",
+  },
+  {
+    id: 5,
+    title: "Analytics",
+    icon: "📈",
+    path: "/analytics",
+  },
+];
 
     return (
         <div>

@@ -7,11 +7,13 @@ const MiddleBottomcontent = () => {
       id: 1,
       title: "Add Products",
       icon: "➕",
+      path: "/Add_Products",
     },
     {
       id: 2,
       title: "Settings",
       icon: "⚙️",
+      path: "/Settings"
     },
   ];
   return (
