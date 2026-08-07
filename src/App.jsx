@@ -1,6 +1,6 @@
 import React from 'react'
 import Admin from './Admin/Admin'
-import { Routes,Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import Dashboard from './Components/RightSide/Dashboard/Dashboard'
 import Products from './Components/RightSide/Products/Products'
 import Orders from './Components/RightSide/Orders/Orders'
@@ -13,18 +13,15 @@ import Account_Settings from './Components/RightSide/Account_Settings/Account_Se
 function App() {
   return (
     <div>
-       <Routes>
-        <Route path="/" element={<Admin/>}>
-          <Route index element={<Dashboard/>} />
-          <Route path="orders" element={<Orders/>} />
-          <Route path="products" element={<Products/>} />
-          <Route path="bookings" element={<Bookings/>} />
-          <Route path="analytics" element={<Analytics/>} />
-          <Route path="Add_Products" element={<Add_Products/>} />
-          <Route path="Settings" element={<Account_Settings/>} />
-          
-          
-
+      <Routes>
+        <Route path="/" element={<Admin />}>
+          <Route index element={<Dashboard />} />
+          <Route path="orders" element={<Orders />} />
+          <Route path="products" element={<Products />} />
+          <Route path="bookings" element={<Bookings />} />
+          <Route path="analytics" element={<Analytics />} />
+          <Route path="add_Products" element={<Add_Products />} />
+          <Route path="settings" element={<Account_Settings />} />
         </Route>
       </Routes>
       {/* <Gallary/> */}

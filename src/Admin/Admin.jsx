@@ -1,20 +1,92 @@
-import React from 'react'
-import LeftSide from '../Components/LeftSide/LeftSide'
-import RightSide from '../Components/RightSide/RightSide'
-import { Outlet } from 'react-router-dom'
-import Nav from '../Components/NavBar/Nav'
+import React from "react";
+import LeftSide from "../Components/LeftSide/LeftSide";
+import Nav from "../Components/NavBar/Nav";
+import { Outlet } from "react-router-dom";
+
+
 const Admin = () => {
+const orders = [
+  {
+    id: "#FL-4821",
+    initials: "PS",
+    avatarColor: "#C8897A",
+    name: "Priya Sharma",
+    email: "priya123@gmail.com",
+    product: "Red Rose Bouquet × 2",
+    amount: "₹2,598",
+    status: "Confirmed",
+    date: "08 Jun",
+  },
+  {
+    id: "#FL-4822",
+    initials: "RK",
+    avatarColor: "#6D8BAA",
+    name: "Rahul Kumar",
+    email: "rahul@gmail.com",
+    product: "White Lily Bouquet × 1",
+    amount: "₹1,799",
+    status: "Pending",
+    date: "09 Jun",
+  },
+  {
+    id: "#FL-4823",
+    initials: "AS",
+    avatarColor: "#A77BD9",
+    name: "Anjali Singh",
+    email: "anjali@gmail.com",
+    product: "Orchid Vase × 3",
+    amount: "₹4,250",
+    status: "Cancelled",
+    date: "10 Jun",
+  },
+  {
+    id: "#FL-4824",
+    initials: "AM",
+    avatarColor: "#5DAE8B",
+    name: "Aman Mishra",
+    email: "aman@gmail.com",
+    product: "Sunflower Basket × 2",
+    amount: "₹2,199",
+    status: "Delivered",
+    date: "11 Jun",
+  },
+  {
+    id: "#FL-4825",
+    initials: "NK",
+    avatarColor: "#E09A5A",
+    name: "Neha Kapoor",
+    email: "neha@gmail.com",
+    product: "Pink Tulip Bouquet × 1",
+    amount: "₹1,499",
+    status: "Confirmed",
+    date: "12 Jun",
+  },
+  {
+    id: "#FL-4826",
+    initials: "VS",
+    avatarColor: "#7B8FE8",
+    name: "Vikas Singh",
+    email: "vikas@gmail.com",
+    product: "Mixed Flower Basket × 3",
+    amount: "₹3,899",
+    status: "Pending",
+    date: "13 Jun",
+  },
+];
+
   return (
     <>
       <Nav />
+
       <div className="flex">
         <LeftSide />
-        <main className="flex-1 ml-60 pt-15 p-7 min-h-screen bg-[#F4F3EF]">
-          <Outlet />
+
+        <main className="flex-1 ml-60 py-24 px-7 min-h-screen bg-[#F4F3EF]">
+          <Outlet context={{ orders }}/>
         </main>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Admin
+export default Admin;

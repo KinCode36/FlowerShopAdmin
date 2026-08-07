@@ -11,7 +11,7 @@ const Middlebuttuns = ({ sidebarButtons }) => {
           className={({ isActive }) =>
             `flex items-center gap-2.5 py-2.5 px-5 text-sm cursor-pointer border-l-2 transition-all duration-150 text-left font-dm font-normal w-full ${
               isActive
-                ? "text-white bg-white/10 border-pink-500"
+                ? "text-white bg-white/10 border-[#6B8F71]"
                 : "text-white/55 border-transparent hover:text-white hover:bg-white/[0.04]"
             }`
           }
