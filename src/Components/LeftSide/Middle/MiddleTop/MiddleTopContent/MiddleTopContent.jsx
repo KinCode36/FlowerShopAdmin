@@ -27,13 +27,7 @@ const sidebarButtons = [
     title: "Bookings",
     icon: "📅",
     path: "/bookings",
-  },
-  {
-    id: 5,
-    title: "Analytics",
-    icon: "📈",
-    path: "/analytics",
-  },
+  }
 ];
 
     return (

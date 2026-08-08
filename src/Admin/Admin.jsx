@@ -72,6 +72,17 @@ const orders = [
     status: "Pending",
     date: "13 Jun",
   },
+  {
+    id: "#FL-4827",
+    initials: "KS",
+    avatarColor: "#7A6BA8",
+    name: "Khushi Sharma",
+    email: "Khushi@gmail.com",
+    product: "Mixed Flower Basket × 3",
+    amount: "₹3,499",
+    status: "Out-for-delivery",
+    date: "13 Jun",
+  },
 ];
 
   return (

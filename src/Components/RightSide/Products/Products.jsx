@@ -1,9 +1,10 @@
 import React from 'react'
+import ProductsTop from './ProductsTop/ProductsTop'
 
 const Products = () => {
   return (
     <div>
-      Products
+      <ProductsTop/>
     </div>
   )
 }
